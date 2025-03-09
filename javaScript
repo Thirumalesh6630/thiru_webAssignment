@@ -1,0 +1,36 @@
+let para = document.getElementById("Paragraph");
+para.textContent = "25:00";
+let startBtn = document.getElementById("button1");
+let stopBtn = document.getElementById("button2");
+let resetBtn = document.getElementById("button3");
+let shortBreak = document.getElementById("button4");
+let longBreak = document.getElementById("button5");
+
+function startBtn() {
+    startBtn.setTimeout(startBtn, shortBreak);
+    para.textContent = startBtn;
+}
+
+function stopBtn() {
+    startBtn.setTimeout(startBtn, shortBreak);
+    para.textContent = stopBtn;
+}
+
+function resetBtn() {
+    para.setTimeout(startBtn, shortBreak);
+    resetBtn.textContent = resetBtn;
+}
+
+function shortBtn() {
+    para.setTimeout(startBtn, 5);
+
+}
+
+function longBtn() {
+    para.setTimeout(startBtn, 25);
+}
+addEventListener("click", startbtn);
+addEventListener("click", stopbtn);
+addEventListener("click", resetBtn);
+addEventListener("click", shortBtn);
+addEventListener("click", longBtn);
